@@ -283,7 +283,7 @@ title: End-to-End Claim Management Optimization
                 </div>
                 <i class="fas fa-arrow-alt-circle-down text-slate-400 group-hover:text-emerald-400 transition-colors"></i>
             </a>
-            <a href="./documents/process-initial.drawio" download class="flex items-center justify-between p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/5 transition-all group">
+            <a href="./documents/Initial Process Modelling.drawio" download class="flex items-center justify-between p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/5 transition-all group">
                 <div class="flex items-center gap-3">
                     <i class="fas fa-project-diagram text-orange-400 group-hover:scale-110 transition-transform"></i>
                     <span class="text-xs text-slate-200 font-medium">Initial BPMN Process (DRAW.IO)</span>
@@ -302,7 +302,7 @@ title: End-to-End Claim Management Optimization
             </p>
         </div>        
         <div class="space-y-3">
-            <a href="./documents/bpmn-claims-optimized.drawio" download class="flex items-center justify-between p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/5 transition-all group">
+            <a href="./documents/optimized process visualisation.drawio" download class="flex items-center justify-between p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/5 transition-all group">
                 <div class="flex items-center gap-3">
                     <i class="fas fa-project-diagram text-emerald-400 group-hover:scale-110 transition-transform"></i>
                     <span class="text-xs text-slate-200 font-medium">Optimized BPMN Process (DRAW.IO)</span>

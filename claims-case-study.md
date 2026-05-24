@@ -50,9 +50,10 @@ title: End-to-End Claim Management Optimization
         </a>       
         <div class="flex items-center gap-6 text-xs font-semibold uppercase tracking-wider">
             <a href="#problem-statement" class="text-slate-300 hover:text-cyan-400 transition-colors">Problem Statement</a>
-            <a href="#bpmn-section" class="text-slate-300 hover:text-cyan-400 transition-colors">BPMN Process</a>
+            <a href="#bpmn-section" class="text-slate-300 hover:text-cyan-400 transition-colors">BPMN Initial Process</a>
             <a href="#sql-section" class="text-slate-300 hover:text-cyan-400 transition-colors">SQL Database</a>
             <a href="#excel-section" class="text-slate-300 hover:text-cyan-400 transition-colors">Excel Results</a>
+            <a href="#second-bpmn" class="text-slate-300 hover:text-cyan-400 transition-colors">Bpmn Optimized Process</a>
             <a href="#deliverables" class="text-slate-300 hover:text-cyan-400 transition-colors">Deliverables</a>
         </div>
     </div>
@@ -106,7 +107,7 @@ title: End-to-End Claim Management Optimization
     <p class="text-slate-400 text-xs italic"><i class="fa-solid fa-circle-exclamation"></i> Return Period Management: If the product is not received within the 30-day deadline, the procedure is permanently aborted.</p>
   </section>
 
-  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
+  <section id="problem-statement" class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-triangle-exclamation text-yellow-500"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-yellow-400 to-orange-500">Problem Statement</span>
@@ -130,7 +131,7 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+<div id="bpmn-section" class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
   <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
   <img src="./images/Initial Process Modelling.drawio.png" alt="BPMN Diagram" class="w-full rounded-lg border border-white/5 shadow-2xl">
   <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual representation of the initial decision-making flow.</p>
@@ -188,13 +189,13 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
   
-<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+<div id="second-bpmn" class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
   <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
   <img src="./images/optimized process visualisation.drawio.png" alt="BPMN Diagram" class="w-full rounded-lg border border-white/5 shadow-2xl">
   <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual representation of the optimized decision-making flow.</p>
 </div>
 
-  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
+  <section id="sql-section" class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-database text-cyan-400"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-blue-500">SQL Database Architecture</span>
@@ -280,7 +281,7 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+<div id="excel-section" class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
     <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Representation in Excel</span></h3>
     <img src="./images/excel-powerquery-dash.png" alt="Excel View" class="w-full rounded-lg border border-white/5 shadow-2xl">
     <p class="text-[10px] text-slate-400 mt-2 italic text-center">Case Studies in Excel consolidated with Power Query.</p>
@@ -374,7 +375,7 @@ title: End-to-End Claim Management Optimization
 
 <div class="mt-16 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
     <div>
-        © 2026 - End-to-End Claims Optimization Project. All rights reserved.
+        © 2026 - End-to-End Claims Optimization Project BY Winston R. Engamba O. - All rights reserved.
     </div>
         <a href="#home" class="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-all duration-300 group font-medium uppercase tracking-wider">
         Back to top 

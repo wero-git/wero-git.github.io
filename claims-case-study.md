@@ -107,8 +107,8 @@ title: End-to-End Claim Management Optimization
     <p class="text-slate-400 text-xs italic"><i class="fa-solid fa-circle-exclamation"></i> Return Period Management: If the product is not received within the 30-day deadline, the procedure is permanently aborted.</p>
   </section>
 
-  <section id="problem-statement" class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
-    <h2 class="text-xl font-bold flex items-center gap-2">
+  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
+    <h2 id="problem-statement" class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-triangle-exclamation text-yellow-500"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-yellow-400 to-orange-500">Problem Statement</span>
     </h2>
@@ -131,8 +131,8 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-<div id="bpmn-section" class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
-  <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
+<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+  <h3 id="bpmn-section" class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
   <img src="./images/Initial Process Modelling.drawio.png" alt="BPMN Diagram" class="w-full rounded-lg border border-white/5 shadow-2xl">
   <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual representation of the initial decision-making flow.</p>
 </div>
@@ -189,8 +189,8 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
   
-<div id="second-bpmn" class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
-  <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
+<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+  <h3 id="second-bpmn" class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
   <img src="./images/optimized process visualisation.drawio.png" alt="BPMN Diagram" class="w-full rounded-lg border border-white/5 shadow-2xl">
   <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual representation of the optimized decision-making flow.</p>
 </div>
@@ -281,8 +281,8 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-<div id="excel-section" class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
-    <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Representation in Excel</span></h3>
+<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+    <h3 id="excel-section" class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Representation in Excel</span></h3>
     <img src="./images/excel-powerquery-dash.png" alt="Excel View" class="w-full rounded-lg border border-white/5 shadow-2xl">
     <p class="text-[10px] text-slate-400 mt-2 italic text-center">Case Studies in Excel consolidated with Power Query.</p>
   </div>

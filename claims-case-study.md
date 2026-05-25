@@ -34,7 +34,7 @@ title: End-to-End Claim Management Optimization
       Case Study Analysis
     </span>
     <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight">
-      <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">
+      <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400 items-center">
         End-to-End Claim Management Optimization
       </span>
     </h1>

@@ -139,15 +139,15 @@ title: End-to-End Claim Management Optimization
         <p class="text-xl md:text-2xl font-bold text-white">Initial Process Modelling</p>
     </div>
     <div class="glass-card rounded-2xl border border-white/10 p-6 md:p-8 space-y-6">
-        <div class="flex flex-col lg:flex-row gap-8 items-center">
-            <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
-                <img src="./images/Initial Process Modelling.png" alt="Initial Process Modelling" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
-            </div>          
+        <div class="flex flex-col lg:flex-row gap-8 items-center">          
             <div class="w-full lg:w-1/3 space-y-4">
                 <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-amber-500/10 text-amber-400 text-[10px] font-bold rounded border border-amber-500/20 uppercase tracking-wider">
                     <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span> Legacy Workflow
                 </div>
                 <h3 class="text-base font-bold text-white tracking-wide">Historical Workflow Overview</h3>
+              <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
+                <img src="./images/Initial Process Modelling.drawio.png" alt="Initial Process Modelling" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
+            </div>
                 <p class="text-xs text-slate-300 leading-relaxed">
                     This diagram models the historical claims management workflow originally executed within the organization. It highlights a highly siloed structure split across 4 distinct lanes (<span class="text-slate-100 font-semibold">Customer, Customer Service, Technicians, Accounting</span>) plagued by heavy manual dependencies.
                 </p>
@@ -207,12 +207,6 @@ title: End-to-End Claim Management Optimization
       </span>
     </div>
   </section>
-  
-<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
-  <h3 id="second-bpmn" class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Process Flowchart (BPMN 2.0)</span></h3>
-  <img src="./images/optimized process visualisation.drawio.png" alt="BPMN Diagram" class="w-full rounded-lg border border-white/5 shadow-2xl">
-  <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual representation of the optimized decision-making flow.</p>
-</div>
 
   <section id="sql-section" class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
@@ -308,15 +302,15 @@ title: End-to-End Claim Management Optimization
         <p class="text-xl md:text-2xl font-bold text-white">Target Automation Architecture</p>
     </div>
     <div class="glass-card rounded-2xl border border-white/10 p-6 md:p-8 space-y-8">
-        <div class="flex flex-col lg:flex-row-reverse gap-8 items-center">
-            <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
-                <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
-            </div>         
+        <div class="flex flex-col lg:flex-row-reverse gap-8 items-center">         
             <div class="w-full lg:w-1/3 space-y-4">
                 <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded border border-emerald-500/20 uppercase tracking-wider">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Automated Target
                 </div>
                 <h3 class="text-base font-bold text-white tracking-wide">Process Optimization and Target Automation</h3>
+              <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
+                <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
+            </div>
                 <p class="text-xs text-slate-300 leading-relaxed">
                     To optimize the claims management process within the enterprise, and building upon the backend logic introduced by the database refactoring, this target BPMN 2.0 diagram introduces the following structural improvements:
                 </p>

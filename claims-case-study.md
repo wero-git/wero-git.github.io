@@ -213,28 +213,28 @@ title: End-to-End Claim Management Optimization
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 pt-6 border-t border-white/5 text-xs">
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
           <div class="flex items-center gap-3 text-amber-400 border-b border-white/10 pb-2">
-            <i class="fas fa-user-clock fa-fw text-base text-amber-400 shrink-0 transform translate-y-[7px]"></i>
+            <i class="fas fa-user-clock fa-fw text-base text-amber-400 shrink-0 transform translate-y-[6px]"></i>
               <h4 class="text-xs tracking-wider text-white font-bold leading-none">Customer Uncertainty</h4>
           </div>
             <p class="text-xs text-slate-300 leading-relaxed">No tracking system for the strict 30-day deadline, creating structural confusion regarding absolute expiration thresholds.</p>
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-amber-400 border-b border-white/10 pb-2">
-                <i class="fas fa-shield-alt text-base text-amber-400 shrink-0"></i>
+                <i class="fas fa-shield-alt fa-fw text-base text-amber-400 shrink-0 translate-y-[6px]"></i>
                 <h4 class="text-xs tracking-wider text-white font-black leading-none">Manual Filtering</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Customer Service evaluates case legitimacy on a case-by-case model without structural anti-fraud validation layers.</p>
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-amber-400 border-b border-white/10 pb-2">
-                <i class="fas fa-file-invoice text-base text-amber-400 shrink-0"></i>
+                <i class="fas fa-file-invoice fa-fw text-base text-amber-400 shrink-0 translate-y-[6px]"></i>
                 <h4 class="text-xs tracking-wider text-white font-black leading-none">Administrative Burden</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Technicians are forced to log data manually into independent local Excel sheets instead of shared relational nodes.</p>
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-amber-400 border-b border-white/10 pb-2">
-                <i class="fas fa-exclamation-triangle text-base text-amber-400 shrink-0"></i>
+                <i class="fas fa-exclamation-triangle fa-fw text-base text-amber-400 shrink-0 translate-y-[6px]"></i>
                 <h4 class="text-xs tracking-wider text-white font-black leading-none">Sequential Accounting</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Calculations executed strictly downstream by the accounting team, generating manual validation loops and calculation risks.</p>

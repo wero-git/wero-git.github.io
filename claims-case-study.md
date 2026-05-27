@@ -173,7 +173,7 @@ title: End-to-End Claim Management Optimization
     <p class="text-slate-300 text-sm md:text-base leading-relaxed">
       An audit of the current Excel-based system reveals several critical flaws regarding task synchronization and data integrity:
     </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs md:text-sm">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs md:text-sm  text-align:justify !important">
       <div class="p-4 rounded-lg bg-red-500/5 border border-red-500/10">
         <strong class="text-red-400 block mb-1"><i class="fa-solid fa-ban"></i> Lack of Parallelism:</strong> Currently, the process relies on a linear ‘handover’—technicians fill out their reports, and accounting must then manually consult the file to perform calculations. This sequential workflow causes data reading errors and significant payment delays.
       </div>

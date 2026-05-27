@@ -8,9 +8,9 @@ title: Process Management Portfolio
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="shortcut icon" type="image/png" href="https://github.com/wero-git/Winston_Engamba/blob/main/favicon-32x32.png?raw=true">
 
+
 <style>
-  /* Theme*/
-    html, body {
+  html, body {
     background: #0f172a !important;
     background-color: #0f172a !important;
     color: #f8fafc !important;
@@ -43,6 +43,18 @@ title: Process Management Portfolio
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
   }
 
+  /* Suppression des éléments résiduels injectés par les thèmes par défaut de GitHub Pages */
+  body > footer, 
+  body > hr,
+  .site-footer,
+  .footer-meta {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 </style>
 
 <header class="pt-24 pb-16 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/10">

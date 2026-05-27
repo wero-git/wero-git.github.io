@@ -173,7 +173,7 @@ title: End-to-End Claim Management Optimization
     <p class="text-slate-300 text-sm md:text-base leading-relaxed">
       An audit of the current Excel-based system reveals several critical flaws regarding task synchronization and data integrity:
     </p>
-    <div class="space-y-4 text-xs md:text-sm">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs md:text-sm">
       <div class="p-4 rounded-lg bg-red-500/5 border border-red-500/10">
         <strong class="text-red-400 block mb-1"><i class="fa-solid fa-ban"></i> Lack of Parallelism:</strong> Currently, the process relies on a linear ‘handover’—technicians fill out their reports, and accounting must then manually consult the file to perform calculations. This sequential workflow causes data reading errors and significant payment delays.
       </div>
@@ -548,8 +548,12 @@ title: End-to-End Claim Management Optimization
         Back to top <i class="fas fa-arrow-up text-emerald-400"></i>
     </a>
   </div>
-
 </div>
+<div class="pt-6 text-center" data-aos="fade-up">
+    <a href="./index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:underline transition">
+      <i class="fa-solid fa-house"></i> Back Home
+    </a>
+  </div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({ duration: 800, once: true });</script>

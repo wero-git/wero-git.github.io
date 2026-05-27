@@ -11,8 +11,20 @@ title: End-to-End Claim Management Optimization
     font-family: ui-sans-serif, system-ui, sans-serif !important;
     margin: 0;
     padding: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* FORCE TOUS LES CONTENEURS PARENTS DU THÈME GITHUB PAGES À S'ÉLARGIR À 95% */
+  .wrapper, .container, .page-content, main, #content, .site-content {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
   }
   
+  /* Justification stricte de tous les textes */
   p, li, td, th {
     text-align: justify !important;
     text-justify: inter-word;
@@ -25,6 +37,7 @@ title: End-to-End Claim Management Optimization
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
   }
 
+  /* Suppression des éléments injectés par les thèmes par défaut de GitHub Pages */
   body > footer, 
   body > hr,
   .site-footer,

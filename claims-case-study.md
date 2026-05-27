@@ -3,25 +3,46 @@ layout: default
 title: End-to-End Claim Management Optimization
 ---
 
+<style>
+  html, body {
+    background: #0f172a !important;
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    font-family: ui-sans-serif, system-ui, sans-serif !important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p, li, td, th {
+    text-align: justify !important;
+    text-justify: inter-word;
+  }
+
+  .glass-card {
+    background: rgba(15, 23, 42, 0.65) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  body > footer, 
+  body > hr,
+  .site-footer,
+  .footer-meta {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+</style>
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
-  body {
-    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%) !important;
-    color: #f8fafc !important;
-    font-family: ui-sans-serif, system-ui, sans-serif !important;
-  }
-  .glass-card {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  }
-</style>
-
-<div class="max-w-5xl mx-auto px-6 py-16 space-y-12">
+<div class="max-w-[85%] mx-auto px-4 md:px-6 py-16 space-y-16">
 
   <div data-aos="fade-down">
     <a href="./optimization.html" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:underline transition">
@@ -29,41 +50,49 @@ title: End-to-End Claim Management Optimization
     </a>
   </div>
 
-  <header class="border-b border-white/10 pb-8 space-y-4" data-aos="fade-down" data-aos-delay="100">
-    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-      Case Study Analysis
-    </h1>
-    <p class="text-slate-400 text-sm md:text-base font-medium">
-      Process Design, Structural Bottlenecks, and Automated Multi-Tiered Financial Reporting Engine
-    </p>
+  <header class="relative rounded-2xl border border-white/10 p-8 md:p-12 bg-cover bg-center overflow-hidden" 
+          style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 30%, rgba(30, 27, 75, 0.8) 100%), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1600&q=80');" 
+          data-aos="fade-down" data-aos-delay="100">
+    <div class="relative z-10 space-y-4">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+        Case Study Analysis
+      </span>
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight text-white">
+        End-to-End Claim Management Optimization
+      </h1>
+      <p class="text-slate-300 text-sm md:text-lg font-medium max-w-3xl">
+        Process Design, Structural Bottlenecks, and Automated Multi-Tiered Financial Reporting Engine
+      </p>
+    </div>
   </header>
   
-  <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-900/70 border-b border-b-white/10 main-container py-4">
-    <div class="flex items-center justify-between px-4">
-        <a href="#home" class="text-sm font-bold tracking-wider text-white hover:text-cyan-400 transition-colors uppercase">
+  <nav class="sticky top-4 z-50 w-full backdrop-blur-md bg-slate-900/80 border border-white/10 rounded-xl p-4 shadow-xl">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+        <a href="#home" class="text-sm font-bold tracking-wider text-white hover:text-cyan-400 transition-colors uppercase flex items-center gap-2 shrink-0">
             <span class="text-cyan-400">⚡</span> End-To-End Claims
         </a>       
-        <div class="flex items-center gap-6 text-xs font-semibold uppercase tracking-wider">
-            <a href="#problem-statement" class="text-slate-300 hover:text-cyan-400 transition-colors">Problem Statement</a>
-            <a href="#bpmn-section" class="text-slate-300 hover:text-cyan-400 transition-colors">BPMN Initial Process</a>
-            <a href="#sql-section" class="text-slate-300 hover:text-cyan-400 transition-colors">SQL Database</a>
-            <a href="#excel-section" class="text-slate-300 hover:text-cyan-400 transition-colors">Excel Results</a>
-            <a href="#second-bpmn" class="text-slate-300 hover:text-cyan-400 transition-colors">Bpmn Optimized Process</a>
-            <a href="#deliverables" class="text-slate-300 hover:text-cyan-400 transition-colors">Deliverables</a>
+        <div class="flex items-center gap-4 md:gap-6 text-[11px] md:text-xs font-semibold uppercase tracking-wider overflow-x-auto max-w-full whitespace-nowrap pb-1 lg:pb-0 scrollbar-none">
+            <a href="#problem-statement" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Problem Statement</a>
+            <a href="#bpmn-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">BPMN Initial Process</a>
+            <a href="#sql-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">SQL Database</a>
+            <a href="#excel-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Excel Results</a>
+            <a href="#second-bpmn" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Bpmn Optimized Process</a>
+            <a href="#comparative-matrix-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Comparative Matrix</a>
+            <a href="#deliverables" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Deliverables</a>
         </div>
     </div>
   </nav>
   <div id="home"></div>
 
-  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
+  <section class="glass-card p-6 md:p-8 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-circle-info text-cyan-400"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-blue-500">Introduction & Process Description</span>
     </h2>
-    <p class="text-slate-200 text-sm leading-relaxed text-justify">
+    <p class="text-slate-200 text-sm md:text-base leading-relaxed">
       Throughout what follows, the process described is that of a customer return followed by a claim. Failures will be identified, modeled, and a proposed solution will be resolved.
     </p>
-    <div class="p-4 bg-white/5 rounded-lg border border-white/5 space-y-3 text-xs md:text-sm text-slate-300 text-justify">
+    <div class="p-5 bg-slate-950/40 rounded-lg border border-white/5 space-y-4 text-xs md:text-sm text-slate-300">
       <p>
         The customer submits a complaint to the company after receiving the package. Customer Service receives and reviews the claim, deciding either to initiate the return process or to escalate the matter to the Legal Department. In the event of legal action, the return procedure is immediately suspended. If the return is deemed legitimate, the customer receives an email requesting they ship the product back within 30 days; otherwise, the process is terminated and marked as aborted.
       </p>
@@ -76,120 +105,118 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up" data-aos-delay="100">
+  <section class="glass-card p-6 md:p-8 rounded-xl space-y-4" data-aos="fade-up" data-aos-delay="100">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-magnifying-glass-chart text-emerald-400"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Interpretation of the Situation</span>
     </h2>
-    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
       The process is structured around strict decision-making flows where technical and accounting actions are interdependent:
     </p>   
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-      <div class="p-4 rounded-lg bg-slate-900/60 border border-white/5 space-y-2">
-        <span class="font-bold text-cyan-400 block"><i class="fa-solid fa-gavel"></i> Receipt & Validation</span>
-        <p class="text-slate-300 text-justify"><strong>Case A (Legitimate):</strong> Initiation of the return procedure. The customer is notified and has a 30-day window to return the product.</p>
-        <p class="text-slate-300 text-justify"><strong>Case B (Abusive/Slanderous):</strong> Immediate termination of the return flow and escalation to legal counsel for defamation proceedings.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs md:text-sm">
+      <div class="p-5 rounded-lg bg-slate-950/50 border border-white/5 space-y-3">
+        <span class="font-bold text-cyan-400 block text-sm"><i class="fa-solid fa-gavel"></i> Receipt & Validation</span>
+        <p class="text-slate-300"><strong>Case A (Legitimate):</strong> Initiation of the return procedure. The customer is notified and has a 30-day window to return the product.</p>
+        <p class="text-slate-300"><strong>Case B (Abusive/Slanderous):</strong> Immediate termination of the return flow and escalation to legal counsel for defamation proceedings.</p>
       </div>
-      <div class="p-4 rounded-lg bg-slate-900/60 border border-white/5 space-y-2">
-        <span class="font-bold text-emerald-400 block"><i class="fa-solid fa-calculator"></i> Business Rules for Refunds</span>
-        <ul class="space-y-1 text-slate-300">
+      <div class="p-5 rounded-lg bg-slate-950/50 border border-white/5 space-y-3">
+        <span class="font-bold text-emerald-400 block text-sm"><i class="fa-solid fa-calculator"></i> Business Rules for Refunds</span>
+        <ul class="space-y-2 text-slate-300">
           <li>• <strong class="text-white">100% Refund:</strong> If the issue is a production defect OR if it's a customer defect AND the product is in good condition.</li>
           <li>• <strong class="text-white">85% Refund:</strong> If the issue is customer-related BUT the product is damaged.</li>
           <li>• <strong class="text-white">70% Refund:</strong> If the issue is customer-related AND the product is very damaged.</li>
         </ul>
       </div>
     </div>
-    <p class="text-slate-400 text-xs italic"><i class="fa-solid fa-circle-exclamation"></i> Return Period Management: If the product is not received within the 30-day deadline, the procedure is permanently aborted.</p>
+    <p class="text-slate-400 text-xs italic flex items-center gap-2"><i class="fa-solid fa-circle-exclamation text-amber-500"></i> Return Period Management: If the product is not received within the 30-day deadline, the procedure is permanently aborted.</p>
   </section>
 
-  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
+  <section class="glass-card p-6 md:p-8 rounded-xl space-y-4" data-aos="fade-up">
     <h2 id="problem-statement" class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-triangle-exclamation text-yellow-500"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-yellow-400 to-orange-500">Problem Statement</span>
     </h2>
-    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
       An audit of the current Excel-based system reveals several critical flaws regarding task synchronization and data integrity:
     </p>
-    <div class="space-y-3 text-xs md:text-sm">
-      <div class="p-3 rounded-lg bg-red-500/5 border border-red-500/10 text-justify">
-        <strong class="text-red-400"><i class="fa-solid fa-ban"></i> Lack of Parallelism:</strong> Currently, the process relies on a linear ‘handover’—technicians fill out their reports, and accounting must then manually consult the file to perform calculations. This sequential workflow causes data reading errors and significant payment delays.
+    <div class="space-y-4 text-xs md:text-sm">
+      <div class="p-4 rounded-lg bg-red-500/5 border border-red-500/10">
+        <strong class="text-red-400 block mb-1"><i class="fa-solid fa-ban"></i> Lack of Parallelism:</strong> Currently, the process relies on a linear ‘handover’—technicians fill out their reports, and accounting must then manually consult the file to perform calculations. This sequential workflow causes data reading errors and significant payment delays.
       </div>
-      <div class="p-3 rounded-lg bg-red-500/5 border border-red-500/10 text-justify">
-        <strong class="text-red-400"><i class="fa-solid fa-gears"></i> Business Rule Complexity:</strong> The multi-tiered refund structure (100%, 85%, 70%) based on the intersection of two variables (Issue Source vs. Product Condition) makes manual data entry in Excel extremely high-risk for financial inaccuracies.
+      <div class="p-4 rounded-lg bg-red-500/5 border border-red-500/10">
+        <strong class="text-red-400 block mb-1"><i class="fa-solid fa-gears"></i> Business Rule Complexity:</strong> The multi-tiered refund structure (100%, 85%, 70%) based on the intersection of two variables (Issue Source vs. Product Condition) makes manual data entry in Excel extremely high-risk for financial inaccuracies.
       </div>
-      <div class="p-3 rounded-lg bg-red-500/5 border border-red-500/10 text-justify">
-        <strong class="text-red-400"><i class="fa-solid fa-eye-slash"></i> Invisibility of Legal Exceptions:</strong> Claims escalated to the Legal Department (e.g., defamation cases) often fall off the standard tracking radar, creating a disconnect between Customer Service and the Legal team.
+      <div class="p-4 rounded-lg bg-red-500/5 border border-red-500/10">
+        <strong class="text-red-400 block mb-1"><i class="fa-solid fa-eye-slash"></i> Invisibility of Legal Exceptions:</strong> Claims escalated to the Legal Department (e.g., defamation cases) often fall off the standard tracking radar, creating a disconnect between Customer Service and the Legal team.
       </div>
-      <div class="p-3 rounded-lg bg-red-500/5 border border-red-500/10 text-justify">
-        <strong class="text-red-400"><i class="fa-solid fa-clock"></i> Inefficient Deadline Management (Time-Outs):</strong> No automated alerts are generated at the 30-day mark (J+30). This forces a manual, line-by-line review to identify expired claims that should be aborted, leading to wasted operational hours.
+      <div class="p-4 rounded-lg bg-red-500/5 border border-red-500/10">
+        <strong class="text-red-400 block mb-1"><i class="fa-solid fa-clock"></i> Inefficient Deadline Management (Time-Outs):</strong> No automated alerts are generated at the 30-day mark (J+30). This forces a manual, line-by-line review to identify expired claims that should be aborted, leading to wasted operational hours.
       </div>
     </div>
   </section>
 
-  <section id="bpmn-section" class="mt-20 space-y-6" data-aos="fade-up">
-    <div class="text-center md:text-left space-y-2 px-4">
-        <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
+  <section id="bpmn-section" class="glass-card rounded-xl border border-white/10 p-6 md:p-8 space-y-6" data-aos="fade-up">
+    <div class="border-b border-white/10 pb-4 space-y-1">
+        <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest flex items-center gap-2">
             <i class="fas fa-history"></i> Legacy Architecture
         </h2>
         <p class="text-xl md:text-2xl font-bold text-white">Initial Process Modelling</p>
-    </div>
-    <div class="glass-card rounded-2xl border border-white/10 p-6 md:p-8 space-y-6">
-        <div class="flex flex-col lg:flex-row gap-8 items-center">          
-            <div class="w-full lg:w-1/3 space-y-4">
-                <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-amber-500/10 text-amber-400 text-[10px] font-bold rounded border border-amber-500/20 uppercase tracking-wider">
-                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span> Legacy Workflow
-                </div>
-                <h3 class="text-base font-bold text-white tracking-wide">Historical Workflow Overview</h3>
-                <p class="text-xs text-slate-300 leading-relaxed">
-                    This diagram models the historical claims management workflow originally executed within the organization. It highlights a highly siloed structure split across 4 distinct lanes (<span class="text-slate-100 font-semibold">Customer, Customer Service, Technicians, Accounting</span>) plagued by heavy manual dependencies.
-                </p>
+    </div>  
+    <div class="flex flex-col xl:flex-row gap-8 items-start">          
+        <div class="w-full xl:w-1/4 space-y-4">
+            <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-amber-500/10 text-amber-400 text-[10px] font-bold rounded border border-amber-500/20 uppercase tracking-wider">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span> Legacy Workflow
             </div>
-            <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
-                <img src="./images/Initial Process Modelling.drawio.png" alt="Initial Process Modelling" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
-            </div>
+            <h3 class="text-base font-bold text-white tracking-wide">Historical Workflow Overview</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                This diagram models the historical claims management workflow originally executed within the organization. It highlights a highly siloed structure split across 4 distinct lanes (<span class="text-slate-100 font-semibold">Customer, Customer Service, Technicians, Accounting</span>) plagued by heavy manual dependencies.
+            </p>
+        </div>
+        <div class="w-full xl:w-3/4 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl flex justify-center items-center">
+            <img src="./images/Initial Process Modelling.drawio.png" alt="Initial Process Modelling" class="w-full h-auto max-w-full rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 object-contain">
         </div>
     </div>
   </section>
 
-  <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up" data-aos-delay="100">
+  <section class="glass-card p-6 md:p-8 rounded-xl space-y-4" data-aos="fade-up" data-aos-delay="100">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-square-poll-horizontal text-emerald-400"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">The Optimized Process</span>
     </h2>
-    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
       In this phase, I optimized the manual claim process by implementing a structured data model and automated calculation rules.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
       <div class="space-y-3">
         <h3 class="text-sm font-bold text-white uppercase tracking-wider"><span class="text-emerald-400 font-bold">Key Improvements</span></h3>
-        <ul class="space-y-2 text-xs text-slate-300 text-justify">
-          <li class="flex items-start gap-1.5">
-            <i class="fa-solid fa-bolt text-emerald-400 mt-0.5"></i>
+        <ul class="space-y-3 text-xs md:text-sm text-slate-300">
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-bolt text-emerald-400 mt-1 shrink-0"></i>
             <span><strong>Logic Automation:</strong> Replaced manual refund estimations with precise SQL-based logic (<span class="text-emerald-400 font-bold">CASE WHEN</span>) and Excel formulas.</span>
           </li>
-          <li class="flex items-start gap-1.5">
-            <i class="fa-solid fa-shield-halved text-emerald-400 mt-0.5"></i>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-shield-halved text-emerald-400 mt-1 shrink-0"></i>
             <span><strong>Financial Accuracy:</strong> Developed a calculation engine that automatically applies 70%, 85%, or 100% refund rates based on product condition and issue source.</span>
           </li>
-          <li class="flex items-start gap-1.5">
-            <i class="fa-solid fa-hourglass-end text-emerald-400 mt-0.5"></i>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-hourglass-end text-emerald-400 mt-1 shrink-0"></i>
             <span><strong>Time-Fencing:</strong> Integrated a “30-day rule” to automatically flag or abort expired claims, protecting company cash flow.</span>
           </li>
         </ul>
       </div>
       <div class="space-y-3">
         <h3 class="text-sm font-bold text-white uppercase tracking-wider"><span class="text-emerald-400 font-bold">Tools & Implementation</span></h3>
-        <ul class="space-y-2 text-xs text-slate-300 text-justify">
-          <li class="flex items-start gap-1.5">
-            <i class="fa-solid fa-code text-cyan-400 mt-0.5"></i>
+        <ul class="space-y-3 text-xs md:text-sm text-slate-300">
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-code text-cyan-400 mt-1 shrink-0"></i>
             <span><strong>SQL Implementation:</strong> Enforced strict business constraints using <span class="text-emerald-400 font-bold">ENUM</span> types and automated updates.</span>
           </li>
-          <li class="flex items-start gap-1.5">
-            <i class="fa-solid fa-table text-cyan-400 mt-0.5"></i>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-table text-cyan-400 mt-1 shrink-0"></i>
             <span><strong>Excel:</strong> Consolidated multiple fragmented data sources to create a unified reporting view.</span>
           </li>
-          <li class="flex items-start gap-1.5">
-            <i class="fa-solid fa-calculator text-cyan-400 mt-0.5"></i>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-calculator text-cyan-400 mt-1 shrink-0"></i>
             <span><strong>Formulas:</strong> Used nested <span class="text-emerald-400 font-bold">IF</span> and <span class="text-emerald-400 font-bold">AND</span> (<span class="text-emerald-400 font-bold">WENN/UND</span>) logic to ensure zero errors on edge cases (e.g., “Unknown” sources).</span>
           </li>
         </ul>
@@ -203,12 +230,12 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-  <section id="sql-section" class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
+  <section id="sql-section" class="glass-card p-6 md:p-8 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-database text-cyan-400"></i>
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-blue-500">SQL Database Architecture</span>
     </h2>
-    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
       Below is the comprehensive relational schema script, business validation logic constraints, and data reporting generation pipeline implemented to resolve the operational gaps:
     </p>
     <div class="p-5 bg-slate-950 rounded-xl border border-white/10 text-xs font-mono overflow-x-auto shadow-2xl space-y-1">
@@ -255,7 +282,7 @@ title: End-to-End Claim Management Optimization
       <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Severe customer damage</p>
       <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Very_Damaged'</span> <span class="text-cyan-400">THEN 70</span></p>
       <p class="text-emerald-500 font-semibold pl-8 mt-1">-- All invalid / unresolved cases</p>
-      <p class="pl-8"><span class="text-cyan-400">ELSE</span> 0</p>
+      <p class="pl-8"><span class="text-cyan-400">ELSE 0</span></p>
       <p class="pl-4"><span class="text-purple-400">END</span></p>
       <p><span class="text-pink-400">WHERE</span> process_status = <span class="text-orange-300">'Received'</span>;</p>
       <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 4. FINANCIAL CALCULATION LAYER</p>
@@ -268,132 +295,122 @@ title: End-to-End Claim Management Optimization
       <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_percentage, <span class="text-orange-300">'%'</span>) <span class="text-pink-400">AS</span> refund_rate,</p>
       <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_amount, <span class="text-orange-300">' €'</span>) <span class="text-pink-400">AS</span> total_refunded, process_status</p>
       <p><span class="text-pink-400">FROM</span> Claim_Management;</p>
-    </div> 
+    </div>    
     <div class="p-4 glass-card rounded-xl border border-white/10 mt-4" data-aos="zoom-in">
         <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Table with the previous mySQL code</span></h3>
         <img src="./images/sql-table-result.png" alt="Datas Table" class="w-full rounded-lg border border-white/5 shadow-2xl">
         <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual Table of the data compiled from the database terminal.</p>
     </div>
-    <div class="mt-4 p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-center flex items-center justify-center gap-3">
-      <i class="fa-solid fa-circle-check text-2xl text-emerald-400"></i>
-      <span class="text-sm font-semibold text-white">
-        Result: Visualisation of the <span class="text-emerald-400 font-bold">optimized</span> Datas and significant reduction of humans' errors.
-      </span>
-    </div>
   </section>
 
-  <section id="second-bpmn" class="mt-20 space-y-8" data-aos="fade-up">
-    <div class="text-center md:text-left space-y-2 px-4">
-        <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
+  <section id="second-bpmn" class="glass-card rounded-xl border border-white/10 p-6 md:p-8 space-y-8" data-aos="fade-up">
+    <div class="border-b border-white/10 pb-4 space-y-1">
+        <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center gap-2">
             <i class="fas fa-magic"></i> Process Optimization
         </h2>
         <p class="text-xl md:text-2xl font-bold text-white">Target Automation Architecture</p>
     </div>
-    <div class="glass-card rounded-2xl border border-white/10 p-6 md:p-8 space-y-8">
-        <div class="flex flex-col lg:flex-row-reverse gap-8 items-center">         
-            <div class="w-full lg:w-1/3 space-y-4">
-                <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded border border-emerald-500/20 uppercase tracking-wider">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Automated Target
-                </div>
-                <p class="text-xs text-slate-300 leading-relaxed text-justify">
-                    To optimize the claims management process within the enterprise, and building upon the backend logic introduced by the database refactoring, this target BPMN 2.0 diagram introduces the following structural improvements:
-                </p>
+    <div class="flex flex-col xl:flex-row-reverse gap-8 items-start">         
+        <div class="w-full xl:w-1/4 space-y-4">
+            <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded border border-emerald-500/20 uppercase tracking-wider">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Automated Target
             </div>
-            <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
-                <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
-            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                To optimize the claims management process within the enterprise, and building upon the backend logic introduced by the database refactoring, this target BPMN 2.0 diagram introduces structural improvements.
+            </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-white/5 text-xs">           
-            <div class="p-4 bg-white/[0.02] hover:bg-white/[0.04] rounded-xl border border-white/5 space-y-2 transition-colors">
-                <div class="flex items-center gap-2 text-cyan-400 font-bold">
-                    <i class="fas fa-calculator text-emerald-400 text-sm"></i>
-                    <h4>Complete Accounting Disintermediation</h4>
-                </div>
-                <p class="text-slate-300 leading-relaxed text-justify">
-                    Financial refund processing has been 100% automated. Consequently, the manual <span class="text-slate-200 font-medium">"Accounting"</span> lane has been entirely removed and replaced by an automation layer (CRM/ERP). This core engine dynamically orchestrates initial claim ingestion, instant prepaid return label generation, and automated bank disbursement, effectively slashing customer turnaround times.
-                </p>
+        <div class="w-full xl:w-3/4 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl flex justify-center items-center">
+            <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto max-w-full rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 object-contain">
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-white/5 text-xs">           
+        <div class="p-4 bg-slate-900/30 hover:bg-slate-900/50 rounded-xl border border-white/5 space-y-2 transition-colors">
+            <div class="flex items-center gap-2 text-cyan-400 font-bold">
+                <i class="fas fa-calculator text-emerald-400 text-sm"></i>
+                <h4>Complete Accounting Disintermediation</h4>
             </div>
-            <div class="p-4 bg-white/[0.02] hover:bg-white/[0.04] rounded-xl border border-white/5 space-y-2 transition-colors">
-                <div class="flex items-center gap-2 text-cyan-400 font-bold">
-                    <i class="fas fa-shield-alt text-rose-400 text-sm"></i>
-                    <h4>First-Contact Anti-Fraud Security</h4>
-                </div>
-                <p class="text-slate-300 leading-relaxed text-justify">
-                    Integration of an automated upstream validation layer (<span class="font-mono text-purple-300 bg-slate-950 px-1 py-0.5 rounded">Run defamation filter</span>) designed to intercept and flag malicious or abusive requests before they reach front-line operational staff.
-                </p>
+            <p class="text-slate-300 leading-relaxed">
+                Financial refund processing has been 100% automated. Consequently, the manual <span class="text-slate-200 font-medium">"Accounting"</span> lane has been entirely removed and replaced by an automation layer (CRM/ERP). This core engine dynamically orchestrates initial claim ingestion, instant prepaid return label generation, and automated bank disbursement, effectively slashing customer turnaround times.
+            </p>
+        </div>
+        <div class="p-4 bg-slate-900/30 hover:bg-slate-900/50 rounded-xl border border-white/5 space-y-2 transition-colors">
+            <div class="flex items-center gap-2 text-cyan-400 font-bold">
+                <i class="fas fa-shield-alt text-rose-400 text-sm"></i>
+                <h4>First-Contact Anti-Fraud Security</h4>
             </div>
-            <div class="p-4 bg-white/[0.02] hover:bg-white/[0.04] rounded-xl border border-white/5 space-y-2 transition-colors">
-                <div class="flex items-center gap-2 text-cyan-400 font-bold">
-                    <i class="fas fa-tools text-blue-400 text-sm"></i>
-                    <h4>Streamlined Technician Responsibilities</h4>
-                </div>
-                <p class="text-slate-300 leading-relaxed text-justify">
-                    Technical staff are completely unburdened from administrative overhead. Technicians are now strictly focused on inspecting physical product conditions and submitting grading matrix verdicts directly into the cloud system interface.
-                </p>
+            <p class="text-slate-300 leading-relaxed">
+                Integration of an automated upstream validation layer (<span class="font-mono text-purple-300 bg-slate-950 px-1 py-0.5 rounded">Run defamation filter</span>) designed to intercept and flag malicious or abusive requests before they reach front-line operational staff.
+            </p>
+        </div>
+        <div class="p-4 bg-slate-900/30 hover:bg-slate-900/50 rounded-xl border border-white/5 space-y-2 transition-colors">
+            <div class="flex items-center gap-2 text-cyan-400 font-bold">
+                <i class="fas fa-tools text-blue-400 text-sm"></i>
+                <h4>Streamlined Technician Responsibilities</h4>
             </div>
-            <div class="p-4 bg-white/[0.02] hover:bg-white/[0.04] rounded-xl border border-white/5 space-y-2 transition-colors">
-                <div class="flex items-center gap-2 text-cyan-400 font-bold">
-                    <i class="fas fa-database text-amber-400 text-sm"></i>
-                    <h4>Centralized Database Integration</h4>
-                </div>
-                <p class="text-slate-300 leading-relaxed text-justify">
-                    Elimination of manual, local Excel file tracking in favor of fully normalized, relational database architecture connecting the system matrix engine (<span class="italic text-slate-200">Refund rules</span>), real-time product supply records (<span class="italic text-slate-200">Inventory System</span>), and payment infrastructure (<span class="italic text-slate-200">Payment Gateway</span>).
-                </p>
+            <p class="text-slate-300 leading-relaxed">
+                Technical staff are completely unburdened from administrative overhead. Technicians are now strictly focused on inspecting physical product conditions and submitting grading matrix verdicts directly into the cloud system interface.
+            </p>
+        </div>
+        <div class="p-4 bg-slate-900/30 hover:bg-slate-900/50 rounded-xl border border-white/5 space-y-2 transition-colors">
+            <div class="flex items-center gap-2 text-cyan-400 font-bold">
+                <i class="fas fa-database text-amber-400 text-sm"></i>
+                <h4>Centralized Database Integration</h4>
             </div>
+            <p class="text-slate-300 leading-relaxed">
+                Elimination of manual, local Excel file tracking in favor of fully normalized, relational database architecture connecting the system matrix engine (<span class="italic text-slate-200">Refund rules</span>), real-time product supply records (<span class="italic text-slate-200">Inventory System</span>), and payment infrastructure (<span class="italic text-slate-200">Payment Gateway</span>).
+            </p>
         </div>
     </div>
   </section>
 
-  <section id="comparative-matrix-section" class="mt-20 space-y-6" data-aos="fade-up">
-    <div class="text-center md:text-left space-y-2 px-4">
-        <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
+  <section id="comparative-matrix-section" class="glass-card rounded-xl border border-white/10 p-6 md:p-8 space-y-6" data-aos="fade-up">
+    <div class="border-b border-white/10 pb-4 space-y-1">
+        <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center gap-2">
             <i class="fas fa-exchange-alt"></i> Benchmark Metrics
         </h2>
         <p class="text-xl md:text-2xl font-bold text-white">Comparative Process Matrix (Before vs. After)</p>
     </div>
-    <div class="glass-card rounded-2xl border border-white/10 p-6 md:p-8">
-        <div class="overflow-x-auto rounded-xl border border-white/5 shadow-2xl">
-            <table class="w-full text-left border-collapse text-xs">
-                <thead>
-                    <tr class="bg-slate-900/90 border-b border-white/10 text-slate-200 font-semibold tracking-wider">
-                        <th class="p-4 w-1/5 whitespace-nowrap">Optimization Pillar</th>
-                        <th class="p-4 w-1/3 text-amber-400/90">Initial Process (Manual & Siloed)</th>
-                        <th class="p-4 w-1/3 text-emerald-400/90">Target Process (Automated via SQL / ERP)</th>
-                        <th class="p-4">Operational & Business Impact</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-white/5 text-slate-300">                    
-                    <tr class="hover:bg-white/[0.02] transition-colors">
-                        <td class="p-4 font-bold text-white bg-white/[0.01]">Financial Management (Accounting)</td>
-                        <td class="p-4">Manual processing, case calculation, and verification handled directly by the Accounting team.</td>
-                        <td class="p-4">End-to-end execution managed instantly by the CRM / ERP system layer integrated with Payment Gateway APIs.</td>
-                        <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02]">Total elimination of customer waiting queues and zero administrative backlog for back-office teams.</td>
-                    </tr>
-                    <tr class="hover:bg-white/[0.02] transition-colors">
-                        <td class="p-4 font-bold text-white bg-white/[0.01]">Security & Filtering</td>
-                        <td class="p-4">Delayed, human validation of claim legitimacy post-ingestion.</td>
-                        <td class="p-4">Automated abuse filtering (<span class="font-mono text-purple-300">Run defamation filter</span>) triggered immediately upon form submission.</td>
-                        <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02]">Immediate protection for operational teams against fraudulent, duplicate, or malicious inquiries.</td>
-                    </tr>
-                    <tr class="hover:bg-white/[0.02] transition-colors">
-                        <td class="p-4 font-bold text-white bg-white/[0.01]">Technician Workload</td>
-                        <td class="p-4">Product condition diagnostics coupled with redundant manual record entry into offline spreadsheets.</td>
-                        <td class="p-4">Exclusive focus on physical hardware evaluation, submitting condition grades directly into the centralized application system.</td>
-                        <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02]">Significant operational engineering productivity gains, freeing staff to focus on technical expertise.</td>
-                    </tr>
-                    <tr class="hover:bg-white/[0.02] transition-colors">
-                        <td class="p-4 font-bold text-white bg-white/[0.01]">Data Infrastructure</td>
-                        <td class="p-4">Siloed, local, and fragmented data logging stored within shared Excel files.</td>
-                        <td class="p-4">Interconnected relational databases mapping state models (<span class="italic text-slate-400">Refund rules, Inventory System, Payment Gateway</span>).</td>
-                        <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02]">100% data integrity, unified audit trail tracking, and absolute prevention of manual human input errors.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class="overflow-x-auto rounded-xl border border-white/5 shadow-2xl bg-slate-950/40">
+        <table class="w-full text-left border-collapse text-xs md:text-sm">
+            <thead>
+                <tr class="bg-slate-900/90 border-b border-white/10 text-slate-200 font-semibold tracking-wider">
+                    <th class="p-4 w-1/4 whitespace-nowrap text-cyan-400 font-bold uppercase tracking-wider">Optimization Pillar</th>
+                    <th class="p-4 w-1/3 text-amber-400 font-bold uppercase tracking-wider">Initial Process (Manual & Siloed)</th>
+                    <th class="p-4 w-1/3 text-emerald-400 font-bold uppercase tracking-wider">Target Process (Automated via SQL / ERP)</th>
+                    <th class="p-4 text-purple-400 font-bold uppercase tracking-wider">Operational & Business Impact</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-white/5 text-slate-300">                    
+                <tr class="hover:bg-white/[0.02] transition-colors">
+                    <td class="p-4 font-bold text-white bg-white/[0.01] align-top">Financial Management</td>
+                    <td class="p-4 align-top leading-relaxed">Manual processing, case calculation, and verification handled directly by the Accounting team.</td>
+                    <td class="p-4 align-top leading-relaxed">End-to-end execution managed instantly by the CRM / ERP system layer integrated with Payment Gateway APIs.</td>
+                    <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02] align-top leading-relaxed">Total elimination of customer waiting queues and zero administrative backlog for back-office teams.</td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition-colors">
+                    <td class="p-4 font-bold text-white bg-white/[0.01] align-top">Security & Filtering</td>
+                    <td class="p-4 align-top leading-relaxed">Delayed, human validation of claim legitimacy post-ingestion.</td>
+                    <td class="p-4 align-top leading-relaxed">Automated abuse filtering (<span class="font-mono text-purple-300">Run defamation filter</span>) triggered immediately upon form submission.</td>
+                    <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02] align-top leading-relaxed">Immediate protection for operational teams against fraudulent, duplicate, or malicious inquiries.</td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition-colors">
+                    <td class="p-4 font-bold text-white bg-white/[0.01] align-top">Technician Workload</td>
+                    <td class="p-4 align-top leading-relaxed">Product condition diagnostics coupled with redundant manual record entry into offline spreadsheets.</td>
+                    <td class="p-4 align-top leading-relaxed">Exclusive focus on physical hardware evaluation, submitting condition grades directly into the centralized application system.</td>
+                    <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02] align-top leading-relaxed">Significant operational engineering productivity gains, freeing staff to focus on technical expertise.</td>
+                </tr>
+                <tr class="hover:bg-white/[0.02] transition-colors">
+                    <td class="p-4 font-bold text-white bg-white/[0.01] align-top">Data Infrastructure</td>
+                    <td class="p-4 align-top leading-relaxed">Siloed, local, and fragmented data logging stored within shared Excel files.</td>
+                    <td class="p-4 align-top leading-relaxed">Interconnected relational databases mapping state models (<span class="italic text-slate-400">Refund rules, Inventory System, Payment Gateway</span>).</td>
+                    <td class="p-4 text-emerald-400 font-medium bg-emerald-500/[0.02] align-top leading-relaxed">100% data integrity, unified audit trail tracking, and absolute prevention of manual human input errors.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
   </section>
 
-  <div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+  <div class="p-6 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
     <h3 id="excel-section" class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Representation in Excel</span></h3>
     <img src="./images/excel-powerquery-dash.png" alt="Excel View" class="w-full rounded-lg border border-white/5 shadow-2xl">
     <p class="text-[10px] text-slate-400 mt-2 italic text-center">Case Studies in Excel.</p>

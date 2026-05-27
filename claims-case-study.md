@@ -32,11 +32,6 @@ title: End-to-End Claim Management Optimization
   <header class="border-b border-white/10 pb-8 space-y-4" data-aos="fade-down" data-aos-delay="100">
     <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
       Case Study Analysis
-    </span>
-    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight">
-      <span class="bg-gradient-to-r text-center text-transparent bg-clip-text from-cyan-400 to-emerald-400 items-center">
-        End-to-End Claim Management Optimization
-      </span>
     </h1>
     <p class="text-slate-400 text-sm md:text-base font-medium">
       Process Design, Structural Bottlenecks, and Automated Multi-Tiered Financial Reporting Engine

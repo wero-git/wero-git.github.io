@@ -234,7 +234,7 @@ title: End-to-End Claim Management Optimization
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-amber-400 border-b border-white/10 pb-2">
-                <i class="fas fa-exclamation-triangle fa-fw text-base text-amber-400 shrink-0 translate-y-[6px]"></i>
+                <i class="fas fa-exclamation-triangle fa-fw text-base text-amber-400 shrink-0 translate-y-[7px]"></i>
                 <h4 class="text-xs tracking-wider text-white font-black leading-none">Sequential Accounting</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Calculations executed strictly downstream by the accounting team, generating manual validation loops and calculation risks.</p>
@@ -381,29 +381,29 @@ title: End-to-End Claim Management Optimization
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 pt-6 border-t border-white/5 text-xs">           
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-calculator text-base text-emerald-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Accounting Disintermediation</h4>
+                <i class="fas fa-calculator fa-fw text-base text-emerald-400 shrink-0 translate-y-[6px]"></i>
+                <h4 class="text-xs tracking-wider text-white font-black leading-none">Accounting Disintermediation</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Financial refund processing has been 100% automated via dynamic ERP system modules.</p>
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-shield-alt text-base text-rose-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Anti-Fraud Security</h4>
+                <i class="fas fa-shield-alt fa-fw text-base text-rose-400 shrink-0 translate-y-[6px]"></i>
+                <h4 class="text-xs tracking-wider text-white font-black leading-none">Anti-Fraud Security</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Integration of an automated upstream validation layer (<span class="font-mono text-purple-300 bg-slate-950 px-1 py-0.5 rounded">Run defamation filter</span>).</p>
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-tools text-base text-blue-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Streamlined Workload</h4>
+                <i class="fas fa-tools fa-fw text-base text-blue-400 shrink-0 translate-y-[6px]"></i>
+                <h4 class="text-xs tracking-wider text-white font-black leading-none">Streamlined Workload</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Technical staff are completely unburdened from administrative overhead to focus on diagnostics.</p>
         </div>
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
             <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-database text-base text-amber-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Centralized Integration</h4>
+                <i class="fas fa-database fa-fw text-base text-amber-400 shrink-0 translate-y-[6px]"></i>
+                <h4 class="text-xs tracking-wider text-white font-black leading-none">Centralized Integration</h4>
             </div>
             <p class="text-xs text-slate-300 leading-relaxed">Elimination of local Excel files in favor of unified database relational models.</p>
         </div>

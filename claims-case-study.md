@@ -43,7 +43,7 @@ title: End-to-End Claim Management Optimization
     </p>
   </header>
   
-<nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-900/70 border-b border-b-white/10 main-container py-4">
+  <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-900/70 border-b border-b-white/10 main-container py-4">
     <div class="flex items-center justify-between px-4">
         <a href="#home" class="text-sm font-bold tracking-wider text-white hover:text-cyan-400 transition-colors uppercase">
             <span class="text-cyan-400">⚡</span> End-To-End Claims
@@ -57,8 +57,8 @@ title: End-to-End Claim Management Optimization
             <a href="#deliverables" class="text-slate-300 hover:text-cyan-400 transition-colors">Deliverables</a>
         </div>
     </div>
-</nav>
-<div id="home"></div>
+  </nav>
+  <div id="home"></div>
 
   <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
@@ -131,7 +131,7 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-<section id="bpmn-section" class="mt-20 space-y-6" data-aos="fade-up">
+  <section id="bpmn-section" class="mt-20 space-y-6" data-aos="fade-up">
     <div class="text-center md:text-left space-y-2 px-4">
         <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
             <i class="fas fa-history"></i> Legacy Architecture
@@ -145,16 +145,16 @@ title: End-to-End Claim Management Optimization
                     <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span> Legacy Workflow
                 </div>
                 <h3 class="text-base font-bold text-white tracking-wide">Historical Workflow Overview</h3>
-              <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
-                <img src="./images/Initial Process Modelling.drawio.png" alt="Initial Process Modelling" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
-            </div>
                 <p class="text-xs text-slate-300 leading-relaxed">
                     This diagram models the historical claims management workflow originally executed within the organization. It highlights a highly siloed structure split across 4 distinct lanes (<span class="text-slate-100 font-semibold">Customer, Customer Service, Technicians, Accounting</span>) plagued by heavy manual dependencies.
                 </p>
             </div>
+            <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
+                <img src="./images/Initial Process Modelling.drawio.png" alt="Initial Process Modelling" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
+            </div>
         </div>
     </div>
-</section>
+  </section>
 
   <section class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-up" data-aos-delay="100">
     <h2 class="text-xl font-bold flex items-center gap-2">
@@ -216,76 +216,69 @@ title: End-to-End Claim Management Optimization
     <p class="text-slate-300 text-sm leading-relaxed text-justify">
       Below is the comprehensive relational schema script, business validation logic constraints, and data reporting generation pipeline implemented to resolve the operational gaps:
     </p>
- <div class="p-5 bg-slate-950 rounded-xl border border-white/10 text-xs font-mono overflow-x-auto shadow-2xl space-y-1">
-  
-  <p class="text-emerald-500 font-semibold mb-2">-- 1. TABLE CREATION (Optimized & Business-Consistent Version)</p>
-  <p><span class="text-pink-400">CREATE TABLE</span> Claim_Management (</p>
-  <p class="pl-4">claim_id <span class="text-cyan-400">INT PRIMARY KEY AUTO_INCREMENT</span>,</p>
-  <p class="pl-4">customer_name <span class="text-cyan-400">VARCHAR(100) NOT NULL</span>,</p>
-  <p class="pl-4">product_name <span class="text-cyan-400">VARCHAR(100) NOT NULL</span>,</p>
-  <p class="pl-4">product_price <span class="text-cyan-400">DECIMAL(10,2) NOT NULL</span></p>
-  <p class="pl-8"><span class="text-pink-400">CHECK</span> (product_price >= 0),</p>
-  <p class="pl-4">claim_date <span class="text-cyan-400">DATE NOT NULL</span>,</p>
-  <p class="pl-4">process_status <span class="text-purple-400">ENUM</span>(<span class="text-orange-300">'Pending_Return'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Aborted'</span>, <span class="text-orange-300">'Legal_Dispute'</span>) <span class="text-cyan-400">DEFAULT</span> <span class="text-orange-300">'Pending_Return'</span>,</p>
-  <p class="pl-4">product_condition <span class="text-purple-400">ENUM</span>(<span class="text-orange-300">'Good'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Very_Damaged'</span>, <span class="text-orange-300">'Not_Received'</span>) <span class="text-cyan-400">DEFAULT</span> <span class="text-orange-300">'Not_Received'</span>,</p>
-  <p class="pl-4">issue_source <span class="text-purple-400">ENUM</span>(<span class="text-orange-300">'Production'</span>, <span class="text-orange-300">'Customer'</span>, <span class="text-orange-300">'Unknown'</span>) <span class="text-cyan-400">DEFAULT</span> <span class="text-orange-300">'Unknown'</span>,</p>
-  <p class="pl-4">refund_percentage <span class="text-cyan-400">DECIMAL(5,2) DEFAULT 0.00</span></p>
-  <p class="pl-8"><span class="text-pink-400">CHECK</span> (refund_percentage <span class="text-pink-400">BETWEEN</span> 0 <span class="text-pink-400">AND</span> 100),</p>
-  <p class="pl-4">refund_amount <span class="text-cyan-400">DECIMAL(10,2) DEFAULT 0.00</span>,</p>
-  <p class="text-emerald-500 font-semibold pl-4 mt-2">-- Business Rule Constraint:</p>
-  <p class="text-emerald-500 font-semibold pl-4">-- A production issue can never produce a "Very_Damaged" state</p>
-  <p class="pl-4"><span class="text-pink-400">CHECK</span> (</p>
-  <p class="pl-8"><span class="text-pink-400">NOT</span> (</p>
-  <p class="pl-12">issue_source = <span class="text-orange-300">'Production'</span></p>
-  <p class="pl-12"><span class="text-pink-400">AND</span> product_condition = <span class="text-orange-300">'Very_Damaged'</span></p>
-  <p class="pl-8">)</p>
-  <p class="pl-4">)</p>
-  <p class="mb-4">);</p>
-
-  <p class="text-emerald-500 font-semibold mb-2">-- 2. MOCK DATA INSERTION (2026 Audit Dataset)</p>
-  <p><span class="text-pink-400">INSERT INTO</span> Claim_Management (customer_name, product_name, product_price, claim_date, process_status, product_condition, issue_source)</p>
-  <p><span class="text-pink-400">VALUES</span></p>
-  <p class="pl-4">(<span class="text-orange-300">'Alice Johnson'</span>, <span class="text-orange-300">'HP PC AMD RYZEN 2025'</span>, 1200.00, <span class="text-orange-300">'2026-05-01'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Very_Damaged'</span>, <span class="text-orange-300">'Customer'</span>),</p>
-  <p class="pl-4">(<span class="text-orange-300">'Bob Smith'</span>, <span class="text-orange-300">'Google 10 Pixel Phone'</span>, 800.00, <span class="text-orange-300">'2026-05-05'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Good'</span>, <span class="text-orange-300">'Customer'</span>),</p>
-  <p class="pl-4">(<span class="text-orange-300">'Charlie Davis'</span>, <span class="text-orange-300">'Lenovo Tab M12'</span>, 500.00, <span class="text-orange-300">'2026-05-08'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Customer'</span>),</p>
-  <p class="pl-4">(<span class="text-orange-300">'Hans Mustermann'</span>, <span class="text-orange-300">'Iphone 13'</span>, 1200.00, <span class="text-orange-300">'2026-05-04'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Production'</span>),</p>
-  <p class="pl-4">(<span class="text-orange-300">'David Wilson'</span>, <span class="text-orange-300">'Google Pixel 8 Phone'</span>, 300.00, <span class="text-orange-300">'2026-04-01'</span>, <span class="text-orange-300">'Pending_Return'</span>, <span class="text-orange-300">'Not_Received'</span>, <span class="text-orange-300">'Unknown'</span>);</p>
-
-  <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 3. REFUND PERCENTAGE ENGINE</p>
-  <p><span class="text-pink-400">UPDATE</span> Claim_Management</p>
-  <p><span class="text-pink-400">SET</span> refund_percentage = <span class="text-purple-400">CASE</span></p>
-  <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Perfect condition returned by customer</p>
-  <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Good'</span> <span class="text-cyan-400">THEN</span> 100</p>
-  <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Manufacturing issue</p>
-  <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Production'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Damaged'</span> <span class="text-cyan-400">THEN</span> 100</p>
-  <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Moderate customer damage</p>
-  <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Damaged'</span> <span class="text-cyan-400">THEN</span> 85</p>
-  <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Severe customer damage</p>
-  <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Very_Damaged'</span> <span class="text-cyan-400">THEN</span> 70</p>
-  <p class="text-emerald-500 font-semibold pl-8 mt-1">-- All invalid / unresolved cases</p>
-  <p class="pl-8"><span class="text-cyan-400">ELSE</span> 0</p>
-  <p class="pl-4"><span class="text-purple-400">END</span></p>
-  <p><span class="text-pink-400">WHERE</span> process_status = <span class="text-orange-300">'Received'</span>;</p>
-
-  <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 4. FINANCIAL CALCULATION LAYER</p>
-  <p><span class="text-pink-400">UPDATE</span> Claim_Management</p>
-  <p><span class="text-pink-400">SET</span> refund_amount = <span class="text-purple-400">ROUND</span>(product_price * refund_percentage / 100, 2)</p>
-  <p><span class="text-pink-400">WHERE</span> process_status = <span class="text-orange-300">'Received'</span>;</p>
-
-  <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 5. FINAL GRANULAR AUDIT VIEW OUTPUT</p>
-  <p><span class="text-pink-400">SELECT</span> claim_id, customer_name, product_name,</p>
-  <p class="pl-4"><span class="text-purple-400">CONCAT</span>(product_price, <span class="text-orange-300">' €'</span>) <span class="text-pink-400">AS</span> unit_price, issue_source, product_condition,</p>
-  <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_percentage, <span class="text-orange-300">'%'</span>) <span class="text-pink-400">AS</span> refund_rate,</p>
-  <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_amount, <span class="text-orange-300">' €'</span>) <span class="text-pink-400">AS</span> total_refunded, process_status</p>
-  <p><span class="text-pink-400">FROM</span> Claim_Management;</p>
-  
-</div>
-    
-  <div class="p-4 glass-card rounded-xl border border-white/10 mt-4" data-aos="zoom-in">
-      <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Table with the previous mySQL code</span></h3>
-      <img src="./images/sql-table-result.png" alt="Datas Table" class="w-full rounded-lg border border-white/5 shadow-2xl">
-      <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual Table of the data compiled from the database terminal.</p>
-  </div>
+    <div class="p-5 bg-slate-950 rounded-xl border border-white/10 text-xs font-mono overflow-x-auto shadow-2xl space-y-1">
+      <p class="text-emerald-500 font-semibold mb-2">-- 1. TABLE CREATION (Optimized & Business-Consistent Version)</p>
+      <p><span class="text-pink-400">CREATE TABLE</span> Claim_Management (</p>
+      <p class="pl-4">claim_id <span class="text-cyan-400">INT PRIMARY KEY AUTO_INCREMENT</span>,</p>
+      <p class="pl-4">customer_name <span class="text-cyan-400">VARCHAR(100) NOT NULL</span>,</p>
+      <p class="pl-4">product_name <span class="text-cyan-400">VARCHAR(100) NOT NULL</span>,</p>
+      <p class="pl-4">product_price <span class="text-cyan-400">DECIMAL(10,2) NOT NULL</span></p>
+      <p class="pl-8"><span class="text-pink-400">CHECK</span> (product_price >= 0),</p>
+      <p class="pl-4">claim_date <span class="text-cyan-400">DATE NOT NULL</span>,</p>
+      <p class="pl-4">process_status <span class="text-purple-400">ENUM</span>(<span class="text-orange-300">'Pending_Return'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Aborted'</span>, <span class="text-orange-300">'Legal_Dispute'</span>) <span class="text-cyan-400">DEFAULT</span> <span class="text-orange-300">'Pending_Return'</span>,</p>
+      <p class="pl-4">product_condition <span class="text-purple-400">ENUM</span>(<span class="text-orange-300">'Good'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Very_Damaged'</span>, <span class="text-orange-300">'Not_Received'</span>) <span class="text-cyan-400">DEFAULT</span> <span class="text-orange-300">'Not_Received'</span>,</p>
+      <p class="pl-4">issue_source <span class="text-purple-400">ENUM</span>(<span class="text-orange-300">'Production'</span>, <span class="text-orange-300">'Customer'</span>, <span class="text-orange-300">'Unknown'</span>) <span class="text-cyan-400">DEFAULT</span> <span class="text-orange-300">'Unknown'</span>,</p>
+      <p class="pl-4">refund_percentage <span class="text-cyan-400">DECIMAL(5,2) DEFAULT 0.00</span></p>
+      <p class="pl-8"><span class="text-pink-400">CHECK</span> (refund_percentage <span class="text-pink-400">BETWEEN</span> 0 <span class="text-pink-400">AND</span> 100),</p>
+      <p class="pl-4">refund_amount <span class="text-cyan-400">DECIMAL(10,2) DEFAULT 0.00</span>,</p>
+      <p class="text-emerald-500 font-semibold pl-4 mt-2">-- Business Rule Constraint:</p>
+      <p class="text-emerald-500 font-semibold pl-4">-- A production issue can never produce a "Very_Damaged" state</p>
+      <p class="pl-4"><span class="text-pink-400">CHECK</span> (</p>
+      <p class="pl-8"><span class="text-pink-400">NOT</span> (</p>
+      <p class="pl-12">issue_source = <span class="text-orange-300">'Production'</span></p>
+      <p class="pl-12"><span class="text-pink-400">AND</span> product_condition = <span class="text-orange-300">'Very_Damaged'</span></p>
+      <p class="pl-8">)</p>
+      <p class="pl-4">)</p>
+      <p class="mb-4">);</p>
+      <p class="text-emerald-500 font-semibold mb-2">-- 2. MOCK DATA INSERTION (2026 Audit Dataset)</p>
+      <p><span class="text-pink-400">INSERT INTO</span> Claim_Management (customer_name, product_name, product_price, claim_date, process_status, product_condition, issue_source)</p>
+      <p><span class="text-pink-400">VALUES</span></p>
+      <p class="pl-4">(<span class="text-orange-300">'Alice Johnson'</span>, <span class="text-orange-300">'HP PC AMD RYZEN 2025'</span>, 1200.00, <span class="text-orange-300">'2026-05-01'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Very_Damaged'</span>, <span class="text-orange-300">'Customer'</span>),</p>
+      <p class="pl-4">(<span class="text-orange-300">'Bob Smith'</span>, <span class="text-orange-300">'Google 10 Pixel Phone'</span>, 800.00, <span class="text-orange-300">'2026-05-05'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Good'</span>, <span class="text-orange-300">'Customer'</span>),</p>
+      <p class="pl-4">(<span class="text-orange-300">'Charlie Davis'</span>, <span class="text-orange-300">'Lenovo Tab M12'</span>, 500.00, <span class="text-orange-300">'2026-05-08'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Customer'</span>),</p>
+      <p class="pl-4">(<span class="text-orange-300">'Hans Mustermann'</span>, <span class="text-orange-300">'Iphone 13'</span>, 1200.00, <span class="text-orange-300">'2026-05-04'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Production'</span>),</p>
+      <p class="pl-4">(<span class="text-orange-300">'David Wilson'</span>, <span class="text-orange-300">'Google Pixel 8 Phone'</span>, 300.00, <span class="text-orange-300">'2026-04-01'</span>, <span class="text-orange-300">'Pending_Return'</span>, <span class="text-orange-300">'Not_Received'</span>, <span class="text-orange-300">'Unknown'</span>);</p>
+      <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 3. REFUND PERCENTAGE ENGINE</p>
+      <p><span class="text-pink-400">UPDATE</span> Claim_Management</p>
+      <p><span class="text-pink-400">SET</span> refund_percentage = <span class="text-purple-400">CASE</span></p>
+      <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Perfect condition returned by customer</p>
+      <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Good'</span> <span class="text-cyan-400">THEN 100</span></p>
+      <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Manufacturing issue</p>
+      <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Production'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Damaged'</span> <span class="text-cyan-400">THEN 100</span></p>
+      <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Moderate customer damage</p>
+      <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Damaged'</span> <span class="text-cyan-400">THEN 85</span></p>
+      <p class="text-emerald-500 font-semibold pl-8 mt-1">-- Severe customer damage</p>
+      <p class="pl-8"><span class="text-cyan-400">WHEN</span> issue_source = <span class="text-orange-300">'Customer'</span> <span class="text-cyan-400">AND</span> product_condition = <span class="text-orange-300">'Very_Damaged'</span> <span class="text-cyan-400">THEN 70</span></p>
+      <p class="text-emerald-500 font-semibold pl-8 mt-1">-- All invalid / unresolved cases</p>
+      <p class="pl-8"><span class="text-cyan-400">ELSE</span> 0</p>
+      <p class="pl-4"><span class="text-purple-400">END</span></p>
+      <p><span class="text-pink-400">WHERE</span> process_status = <span class="text-orange-300">'Received'</span>;</p>
+      <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 4. FINANCIAL CALCULATION LAYER</p>
+      <p><span class="text-pink-400">UPDATE</span> Claim_Management</p>
+      <p><span class="text-pink-400">SET</span> refund_amount = <span class="text-purple-400">ROUND</span>(product_price * refund_percentage / 100, 2)</p>
+      <p><span class="text-pink-400">WHERE</span> process_status = <span class="text-orange-300">'Received'</span>;</p>
+      <p class="text-emerald-500 font-semibold mt-4 mb-2">-- 5. FINAL GRANULAR AUDIT VIEW OUTPUT</p>
+      <p><span class="text-pink-400">SELECT</span> claim_id, customer_name, product_name,</p>
+      <p class="pl-4"><span class="text-purple-400">CONCAT</span>(product_price, <span class="text-orange-300">' €'</span>) <span class="text-pink-400">AS</span> unit_price, issue_source, product_condition,</p>
+      <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_percentage, <span class="text-orange-300">'%'</span>) <span class="text-pink-400">AS</span> refund_rate,</p>
+      <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_amount, <span class="text-orange-300">' €'</span>) <span class="text-pink-400">AS</span> total_refunded, process_status</p>
+      <p><span class="text-pink-400">FROM</span> Claim_Management;</p>
+    </div>   
+    <div class="p-4 glass-card rounded-xl border border-white/10 mt-4" data-aos="zoom-in">
+        <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Table with the previous mySQL code</span></h3>
+        <img src="./images/sql-table-result.png" alt="Datas Table" class="w-full rounded-lg border border-white/5 shadow-2xl">
+        <p class="text-[10px] text-slate-400 mt-2 italic text-center">Visual Table of the data compiled from the database terminal.</p>
+    </div>
     <div class="mt-4 p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-center flex items-center justify-center gap-3">
       <i class="fa-solid fa-circle-check text-2xl text-emerald-400"></i>
       <span class="text-sm font-semibold text-white">
@@ -294,7 +287,7 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-<section id="second-bpmn" class="mt-20 space-y-8" data-aos="fade-up">
+  <section id="second-bpmn" class="mt-20 space-y-8" data-aos="fade-up">
     <div class="text-center md:text-left space-y-2 px-4">
         <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
             <i class="fas fa-magic"></i> Process Optimization
@@ -307,13 +300,12 @@ title: End-to-End Claim Management Optimization
                 <div class="inline-flex items-center gap-1.5 px-2 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded border border-emerald-500/20 uppercase tracking-wider">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Automated Target
                 </div>
-                <h3 class="text-base font-bold text-white tracking-wide">Process Optimization and Target Automation</h3>
-              <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
-                <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
-            </div>
-                <p class="text-xs text-slate-300 leading-relaxed">
+                <p class="text-xs text-slate-300 leading-relaxed text-justify">
                     To optimize the claims management process within the enterprise, and building upon the backend logic introduced by the database refactoring, this target BPMN 2.0 diagram introduces the following structural improvements:
                 </p>
+            </div>
+            <div class="w-full lg:w-2/3 bg-slate-950/60 p-4 rounded-xl border border-white/5 shadow-2xl">
+                <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto rounded-lg opacity-85 hover:opacity-100 transition-opacity duration-300">
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-white/5 text-xs">           
@@ -322,7 +314,7 @@ title: End-to-End Claim Management Optimization
                     <i class="fas fa-calculator text-emerald-400 text-sm"></i>
                     <h4>Complete Accounting Disintermediation</h4>
                 </div>
-                <p class="text-slate-300 leading-relaxed">
+                <p class="text-slate-300 leading-relaxed text-justify">
                     Financial refund processing has been 100% automated. Consequently, the manual <span class="text-slate-200 font-medium">"Accounting"</span> lane has been entirely removed and replaced by an automation layer (CRM/ERP). This core engine dynamically orchestrates initial claim ingestion, instant prepaid return label generation, and automated bank disbursement, effectively slashing customer turnaround times.
                 </p>
             </div>
@@ -331,7 +323,7 @@ title: End-to-End Claim Management Optimization
                     <i class="fas fa-shield-alt text-rose-400 text-sm"></i>
                     <h4>First-Contact Anti-Fraud Security</h4>
                 </div>
-                <p class="text-slate-300 leading-relaxed">
+                <p class="text-slate-300 leading-relaxed text-justify">
                     Integration of an automated upstream validation layer (<span class="font-mono text-purple-300 bg-slate-950 px-1 py-0.5 rounded">Run defamation filter</span>) designed to intercept and flag malicious or abusive requests before they reach front-line operational staff.
                 </p>
             </div>
@@ -340,7 +332,7 @@ title: End-to-End Claim Management Optimization
                     <i class="fas fa-tools text-blue-400 text-sm"></i>
                     <h4>Streamlined Technician Responsibilities</h4>
                 </div>
-                <p class="text-slate-300 leading-relaxed">
+                <p class="text-slate-300 leading-relaxed text-justify">
                     Technical staff are completely unburdened from administrative overhead. Technicians are now strictly focused on inspecting physical product conditions and submitting grading matrix verdicts directly into the cloud system interface.
                 </p>
             </div>
@@ -349,15 +341,15 @@ title: End-to-End Claim Management Optimization
                     <i class="fas fa-database text-amber-400 text-sm"></i>
                     <h4>Centralized Database Integration</h4>
                 </div>
-                <p class="text-slate-300 leading-relaxed">
+                <p class="text-slate-300 leading-relaxed text-justify">
                     Elimination of manual, local Excel file tracking in favor of fully normalized, relational database architecture connecting the system matrix engine (<span class="italic text-slate-200">Refund rules</span>), real-time product supply records (<span class="italic text-slate-200">Inventory System</span>), and payment infrastructure (<span class="italic text-slate-200">Payment Gateway</span>).
                 </p>
             </div>
         </div>
     </div>
-</section>
+  </section>
 
-<section id="comparative-matrix-section" class="mt-20 space-y-6" data-aos="fade-up">
+  <section id="comparative-matrix-section" class="mt-20 space-y-6" data-aos="fade-up">
     <div class="text-center md:text-left space-y-2 px-4">
         <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center justify-center md:justify-start gap-2">
             <i class="fas fa-exchange-alt"></i> Benchmark Metrics
@@ -404,15 +396,15 @@ title: End-to-End Claim Management Optimization
             </table>
         </div>
     </div>
-</section>
+  </section>
 
-<div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
+  <div class="p-4 glass-card rounded-xl border border-white/10" data-aos="zoom-in">
     <h3 id="excel-section" class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Representation in Excel</span></h3>
     <img src="./images/excel-powerquery-dash.png" alt="Excel View" class="w-full rounded-lg border border-white/5 shadow-2xl">
     <p class="text-[10px] text-slate-400 mt-2 italic text-center">Case Studies in Excel.</p>
   </div>
   
-<section id="deliverables" class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6" data-aos="fade-up">  
+  <section id="deliverables" class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6" data-aos="fade-up">  
     <div class="p-6 glass-card rounded-xl border border-white/10 flex flex-col justify-between">
         <div>
             <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest flex items-center gap-2">
@@ -496,23 +488,25 @@ title: End-to-End Claim Management Optimization
             </a>
         </div>
     </div>
-</section>
+  </section>
 
-<div class="mt-16 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+  <div class="mt-16 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
     <div>
         © 2026 - End-to-End Claims Optimization Project BY Winston R. Engamba O. - All rights reserved.
     </div>
-        <a href="#home" class="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-all duration-300 group font-medium uppercase tracking-wider">
+    <a href="#home" class="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-all duration-300 group font-medium uppercase tracking-wider">
         Back to top 
         <i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform text-emerald-400"></i>
     </a>
-</div>
+  </div>
 
   <div class="pt-6 text-center" data-aos="fade-up">
     <a href="./index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-400 hover:underline transition">
       <i class="fa-solid fa-house"></i> Back Home
     </a>
   </div>
+
+</div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({ duration: 800, once: true });</script>

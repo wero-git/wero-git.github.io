@@ -10,17 +10,39 @@ title: Process Management Portfolio
 
 <style>
   /* Theme*/
-  body {
-    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%) !important;
+    html, body {
+    background: #0f172a !important;
+    background-color: #0f172a !important;
     color: #f8fafc !important;
+    font-family: ui-sans-serif, system-ui, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    max-width: 100% !important;
   }
-  /* (Glassmorphism) */
+
+  /* FORCE TOUS LES CONTENEURS PARENTS DU THÈME GITHUB PAGES À S'ÉLARGIR À 95% */
+  .wrapper, .container, .page-content, main, #content, .site-content {
+    max-width: 80% !important;
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+  }
+  
+  /* Justification stricte de tous les textes */
+  p, li, td, th {
+    text-align: justify !important;
+    text-justify: inter-word;
+  }
+
   .glass-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(15, 23, 42, 0.65) !important;
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
   }
+
 </style>
 
 <header class="pt-24 pb-16 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/10">

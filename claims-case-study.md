@@ -342,8 +342,7 @@ title: End-to-End Claim Management Optimization
             <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-3">
                 <i class="fas fa-tools text-lg shrink-0"></i>
                 <h4 class="text-sm tracking-wider uppercase text-white font-black">Tools & Implementation</h4>
-            </div>
-            
+            </div>      
             <div class="space-y-4">
                 <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
                     <div class="flex items-center gap-2 text-cyan-400">
@@ -359,7 +358,6 @@ title: End-to-End Claim Management Optimization
                     </div>
                     <p class="text-xs text-slate-300 font-bold leading-relaxed">Consolidated fragmented multi-source entry streams using structured reporting to form a unified business operational pipeline view.</p>
                 </div>
-
                 <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
                     <div class="flex items-center gap-2 text-cyan-400">
                         <i class="fas fa-square-root-alt text-xs"></i>
@@ -372,7 +370,7 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-  <section id="comparative-matrix-section" class="glass-card rounded-xl border border-white/10 p-6 md:p-8 space-y-6" data-aos="fade-up">
+<section id="comparative-matrix-section" class="glass-card rounded-xl border border-white/10 p-6 md:p-8 space-y-6" data-aos="fade-up">
     <div class="border-b border-white/10 pb-4 space-y-1">
         <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center gap-2">
             <i class="fas fa-exchange-alt"></i> Benchmark Metrics

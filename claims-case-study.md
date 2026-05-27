@@ -109,7 +109,6 @@ title: End-to-End Claim Management Optimization
             <a href="#problem-statement" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Problem Statement</a>
             <a href="#bpmn-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">BPMN Initial Process</a>
             <a href="#sql-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">SQL Database</a>
-            <a href="#excel-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Excel Results</a>
             <a href="#second-bpmn" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Bpmn Optimized Process</a>
             <a href="#comparative-matrix-section" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Comparative Matrix</a>
             <a href="#deliverables" class="text-slate-300 hover:text-cyan-400 transition-colors px-1">Deliverables</a>
@@ -242,80 +241,6 @@ title: End-to-End Claim Management Optimization
     </div>
   </section>
 
-  <section class="glass-card p-6 md:p-8 rounded-xl space-y-6" data-aos="fade-up" data-aos-delay="100">
-    <h2 class="text-xl font-bold flex items-center gap-2">
-      <i class="fa-solid fa-square-poll-horizontal text-emerald-400"></i>
-      <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">The Optimized Process</span>
-    </h2>
-    <p class="text-slate-300 text-sm md:text-base leading-relaxed">
-      In this phase, I optimized the manual claim process by implementing a structured data model and automated calculation rules.
-    </p>    
-    <div class="space-y-6">
-        <div class="space-y-3">
-            <h3 class="text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2">
-                <i class="fas fa-star text-xs"></i> Key Improvements
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-                    <div class="flex items-center gap-3 text-emerald-400 border-b border-white/10 pb-2">
-                        <i class="fa-solid fa-bolt text-base text-emerald-400 shrink-0"></i>
-                        <h4 class="text-xs tracking-wider uppercase text-white font-black">Logic Automation</h4>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed">Replaced manual refund estimations with precise SQL-based logic (<span class="text-emerald-400 font-mono">CASE WHEN</span>) and integrated automated formulas.</p>
-                </div>
-                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-                    <div class="flex items-center gap-3 text-emerald-400 border-b border-white/10 pb-2">
-                        <i class="fa-solid fa-shield-halved text-base text-emerald-400 shrink-0"></i>
-                        <h4 class="text-xs tracking-wider uppercase text-white font-black">Financial Accuracy</h4>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed">Developed an absolute computation engine that automatically applies 70%, 85%, or 100% refund rates based on product condition intersection.</p>
-                </div>
-                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-                    <div class="flex items-center gap-3 text-emerald-400 border-b border-white/10 pb-2">
-                        <i class="fa-solid fa-hourglass-end text-base text-emerald-400 shrink-0"></i>
-                        <h4 class="text-xs tracking-wider uppercase text-white font-black">Time-Fencing</h4>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed">Integrated an automated "30-day rule" trigger to automatically flag or abort expired client claims, protecting company liquid flow.</p>
-                </div>
-            </div>
-        </div>
-        <div class="space-y-3">
-            <h3 class="text-xs font-black text-cyan-400 uppercase tracking-widest flex items-center gap-2">
-                <i class="fas fa-tools text-xs"></i> Tools & Implementation
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-                    <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                        <i class="fa-solid fa-code text-base text-cyan-400 shrink-0"></i>
-                        <h4 class="text-xs tracking-wider uppercase text-white font-black">SQL Implementation</h4>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed">Enforced strict database validation rules using standardized <span class="text-cyan-400 font-mono">ENUM</span> data types and transactional consistency loops.</p>
-                </div>
-                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-                    <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                        <i class="fa-solid fa-table text-base text-cyan-400 shrink-0"></i>
-                        <h4 class="text-xs tracking-wider uppercase text-white font-black">Excel Dashboard</h4>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed">Consolidated fragmented multi-source entry streams to form a unified business operational pipeline report view.</p>
-                </div>
-                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-                    <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                        <i class="fa-solid fa-calculator text-base text-cyan-400 shrink-0"></i>
-                        <h4 class="text-xs tracking-wider uppercase text-white font-black">Formula Logic</h4>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed">Deployed strict nested <span class="text-cyan-400 font-mono">IF/AND</span> equations to handle edge instances completely free of human variance.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-center flex items-center justify-center gap-3">
-      <i class="fa-solid fa-circle-check text-2xl text-emerald-400"></i>
-      <span class="text-sm font-semibold text-white">
-        Result: Reduced manual processing time and human calculation errors.
-      </span>
-    </div>
-  </section>
-
   <section id="sql-section" class="glass-card p-6 md:p-8 rounded-xl space-y-4" data-aos="fade-up">
     <h2 class="text-xl font-bold flex items-center gap-2">
       <i class="fa-solid fa-database text-cyan-400"></i>
@@ -356,7 +281,7 @@ title: End-to-End Claim Management Optimization
       <p class="pl-4">(<span class="text-orange-300">'Charlie Davis'</span>, <span class="text-orange-300">'Lenovo Tab M12'</span>, 500.00, <span class="text-orange-300">'2026-05-08'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Customer'</span>),</p>
       <p class="pl-4">(<span class="text-orange-300">'Hans Mustermann'</span>, <span class="text-orange-300">'Iphone 13'</span>, 1200.00, <span class="text-orange-300">'2026-05-04'</span>, <span class="text-orange-300">'Received'</span>, <span class="text-orange-300">'Damaged'</span>, <span class="text-orange-300">'Production'</span>),</p>
       <p class="pl-4">(<span class="text-orange-300">'David Wilson'</span>, <span class="text-orange-300">'Google Pixel 8 Phone'</span>, 300.00, <span class="text-orange-300">'2026-04-01'</span>, <span class="text-orange-300">'Pending_Return'</span>, <span class="text-orange-300">'Not_Received'</span>, <span class="text-orange-300">'Unknown'</span>);</p>
-    </div>   
+    </div>  
     <div class="p-4 glass-card rounded-xl border border-white/10 mt-4" data-aos="zoom-in">
         <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest">Database Result Render</h3>
         <img src="./images/sql-table-result.png" alt="Datas Table" class="w-full rounded-lg border border-white/5 shadow-2xl">
@@ -383,34 +308,66 @@ title: End-to-End Claim Management Optimization
             <img src="./images/optimized process visualisation.drawio.png" alt="Optimized Process Target" class="w-full h-auto max-w-full rounded-lg opacity-90 hover:opacity-100 transition-opacity duration-300 object-contain">
         </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 pt-6 border-t border-white/5 text-xs">           
-        <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-            <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-calculator text-base text-emerald-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Accounting Disintermediation</h4>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-6 border-t border-white/5">       
+        <div class="p-6 bg-slate-950/70 rounded-xl border-2 border-emerald-500/40 shadow-2xl space-y-6">
+            <div class="flex items-center gap-3 text-emerald-400 border-b border-white/10 pb-3">
+                <i class="fas fa-star text-lg shrink-0"></i>
+                <h4 class="text-sm tracking-wider uppercase text-white font-black">Key Improvements</h4>
+            </div>          
+            <div class="space-y-4">
+                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-emerald-400">
+                        <i class="fas fa-cogs text-xs"></i>
+                        <h5 class="text-xs tracking-wider uppercase text-white font-black">Logic Automation</h5>
+                    </div>
+                    <p class="text-xs text-slate-300 font-bold leading-relaxed">Replaced manual refund estimations with precise SQL-based logic (CASE WHEN) and integrated automated backend triggers.</p>
+                </div>
+                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-emerald-400">
+                        <i class="fas fa-calculator text-xs"></i>
+                        <h5 class="text-xs tracking-wider uppercase text-white font-black">Financial Accuracy</h5>
+                    </div>
+                    <p class="text-xs text-slate-300 font-bold leading-relaxed">Developed an absolute computation engine that automatically calculates 70%, 85%, or 100% refund rates based on product condition intersection.</p>
+                </div>
+                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-emerald-400">
+                        <i class="fas fa-hourglass-half text-xs"></i>
+                        <h5 class="text-xs tracking-wider uppercase text-white font-black">Time-Fencing</h5>
+                    </div>
+                    <p class="text-xs text-slate-300 font-bold leading-relaxed">Integrated an automated "30-day rule" trigger to automatically flag or abort expired client claims, protecting company liquid flow.</p>
+                </div>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed">Financial refund processing has been 100% automated via dynamic ERP system modules.</p>
         </div>
-        <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-            <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-shield-alt text-base text-rose-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Anti-Fraud Security</h4>
+        <div class="p-6 bg-slate-950/70 rounded-xl border-2 border-cyan-500/40 shadow-2xl space-y-6">
+            <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-3">
+                <i class="fas fa-tools text-lg shrink-0"></i>
+                <h4 class="text-sm tracking-wider uppercase text-white font-black">Tools & Implementation</h4>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed">Integration of an automated upstream validation layer (<span class="font-mono text-purple-300 bg-slate-950 px-1 py-0.5 rounded">Run defamation filter</span>).</p>
-        </div>
-        <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-            <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-tools text-base text-blue-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Streamlined Workload</h4>
+            
+            <div class="space-y-4">
+                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-cyan-400">
+                        <i class="fas fa-code text-xs"></i>
+                        <h5 class="text-xs tracking-wider uppercase text-white font-black">SQL Architecture</h5>
+                    </div>
+                    <p class="text-xs text-slate-300 font-bold leading-relaxed">Enforced strict database validation rules using standardized ENUM data types and transactional consistency loops.</p>
+                </div>
+                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-cyan-400">
+                        <i class="fas fa-chart-bar text-xs"></i>
+                        <h5 class="text-xs tracking-wider uppercase text-white font-black">Excel Dashboard</h5>
+                    </div>
+                    <p class="text-xs text-slate-300 font-bold leading-relaxed">Consolidated fragmented multi-source entry streams using structured reporting to form a unified business operational pipeline view.</p>
+                </div>
+
+                <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/10 shadow-xl space-y-2 transition-all duration-300">
+                    <div class="flex items-center gap-2 text-cyan-400">
+                        <i class="fas fa-square-root-alt text-xs"></i>
+                        <h5 class="text-xs tracking-wider uppercase text-white font-black">Formula Logic</h5>
+                    </div>
+                    <p class="text-xs text-slate-300 font-bold leading-relaxed">Deployed strict nested IF/AND equations to handle edge instances completely free of human variance.</p>
+                </div>
             </div>
-            <p class="text-xs text-slate-300 leading-relaxed">Technical staff are completely unburdened from administrative overhead to focus on diagnostics.</p>
-        </div>
-        <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
-            <div class="flex items-center gap-3 text-cyan-400 border-b border-white/10 pb-2">
-                <i class="fas fa-database text-base text-amber-400 shrink-0"></i>
-                <h4 class="text-xs tracking-wider uppercase text-white font-black">Centralized Integration</h4>
-            </div>
-            <p class="text-xs text-slate-300 leading-relaxed">Elimination of local Excel files in favor of unified database relational models.</p>
         </div>
     </div>
   </section>

@@ -273,7 +273,7 @@ title: End-to-End Claim Management Optimization
       <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_percentage, <span class="text-orange-300">'%'</span>) <span class="text-pink-400">AS</span> refund_rate,</p>
       <p class="pl-4"><span class="text-purple-400">CONCAT</span>(refund_amount, <span class="text-orange-300">' €'</span>) <span class="text-pink-400">AS</span> total_refunded, process_status</p>
       <p><span class="text-pink-400">FROM</span> Claim_Management;</p>
-    </div>   
+    </div> 
     <div class="p-4 glass-card rounded-xl border border-white/10 mt-4" data-aos="zoom-in">
         <h3 class="text-xs font-bold text-cyan-400 mb-4 uppercase tracking-widest"><span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-emerald-400">Table with the previous mySQL code</span></h3>
         <img src="./images/sql-table-result.png" alt="Datas Table" class="w-full rounded-lg border border-white/5 shadow-2xl">

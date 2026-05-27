@@ -214,7 +214,7 @@ title: End-to-End Claim Management Optimization
         <div class="p-5 bg-slate-900/90 hover:bg-slate-800/80 rounded-xl border border-white/20 shadow-xl space-y-3 transition-all duration-300 backdrop-blur-sm">
           <div class="flex items-center gap-3 text-amber-400 border-b border-white/10 pb-2">
             <i class="fas fa-user-clock fa-fw text-base text-amber-400 shrink-0 transform translate-y-[0px]"></i>
-              <h4 class="text-xs tracking-wider uppercase text-white font-black leading-none">Customer Uncertainty</h4>
+              <h4 class="text-xs tracking-wider text-white font-black leading-none">Customer Uncertainty</h4>
           </div>
             <p class="text-xs text-slate-300 leading-relaxed">No tracking system for the strict 30-day deadline, creating structural confusion regarding absolute expiration thresholds.</p>
         </div>

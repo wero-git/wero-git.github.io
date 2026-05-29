@@ -154,7 +154,7 @@ title: Process Management Portfolio
     <h2 class="text-3xl font-extrabold">
       <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-blue-500">Get In Touch</span>
     </h2>
-    <p class="text-slate-400 text-sm">Have an opportunity or want to discuss process automation? Let's connect!</p>
+    <p class="text-slate-400 text-sm" style="text-align: center !important;">Have an opportunity or want to discuss process automation? Let's connect!</p>
   </div>
 
   <div class="grid md:grid-cols-2 gap-8">

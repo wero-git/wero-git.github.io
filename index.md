@@ -78,7 +78,7 @@ title: Process Management Portfolio
     <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
        <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-blue-500">Hi, I'm Winston Engamba</span>
     </h1>
-    <p class="text-xl font-medium text-cyan-400">
+    <p class="text-xl font-medium text-cyan-400 text-center">
       Process Management | Digitization | Optimization
     </p> 
     <p class="text-slate-300 text-base max-w-xl leading-relaxed text-justify mx-auto">

@@ -45,13 +45,14 @@ title: Process Management Portfolio
 
   /* Cible la bande supérieure officielle de Jekyll pour lui mettre une image */
   .page-header, .site-header, header[class*="page-header"] {
-  background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('./images/top.png') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-  padding: 3rem 1.5rem !important; /* Ajuste la hauteur de la bande */
-}
+    background: none !important; /* Supprime complètement le fond bleuâtre par défaut du thème Jekyll */
+    background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('./images/tech_dna_process_fusion') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 3rem 1.5rem !important; /* Ajuste la hauteur de la bande */
+  }
 
 /* Optionnel : Force les textes par défaut de cette bande à devenir blancs/cyans */
 .page-header h1, .project-name { color: #ffffff !important; font-weight: 900 !important; }

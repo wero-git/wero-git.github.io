@@ -73,15 +73,17 @@ title: Process Management Portfolio
   }
 </style>
 
-<header class="pt-24 pb-16 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border-b border-white/10">
-  <div class="flex-1 space-y-4 text-center md:text-left" data-aos="fade-right">
-    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white text-center md:text-center">
+<header class="pt-24 pb-16 px-6 max-w-3xl mx-auto border-b border-white/10" data-aos="fade-up">
+  <div class="space-y-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
        <span class="bg-gradient-to-r text-transparent bg-clip-text from-cyan-400 to-blue-500">Hi, I'm Winston Engamba</span>
     </h1>
-    <p class="text-xl font-medium text-cyan-400 text-center md:text-center">Process Management | Digitization | Optimization</p> 
-    <p class="text-slate-300 text-base max-w-xl leading-relaxed text-justify mx-auto md:mx-auto">
+    <p class="text-xl font-medium text-cyan-400">
+      Process Management | Digitization | Optimization
+    </p> 
+    <p class="text-slate-300 text-base max-w-xl leading-relaxed text-justify mx-auto">
       Welcome to my Portfolio. I am a results-driven student with a passion for industrial efficiency, focusing on bridging the gap between traditional operations and digital innovation.
-    </p>
+    </p>   
   </div>
 </header>
 

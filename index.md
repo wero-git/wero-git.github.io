@@ -67,53 +67,7 @@ title: Process Management Portfolio
       Welcome to my Portfolio. I am a results-driven student with a passion for industrial efficiency, focusing on bridging the gap between traditional operations and digital innovation.
     </p>
   </div>
-  
-  <div class="flex-1 flex justify-center" data-aos="fade-left">
-    <img src="https://github.com/wero-git/Winston_Engamba/blob/main/images/tech_dna_process_fusion.png?raw=true" alt="Process DNA" class="w-full max-w-sm rounded-2xl drop-shadow-[0_0_25px_rgba(6,182,212,0.25)]">
-  </div>
 </header>
-
-<div class="max-w-6xl mx-auto px-6 mt-12" data-aos="fade-up">
-  <div class="relative w-full h-24 flex items-center justify-center overflow-hidden rounded-xl bg-slate-950/40 border border-white/5 shadow-2xl backdrop-blur-sm">
-    <div class="absolute w-72 h-16 bg-cyan-500/10 blur-3xl rounded-full top-4 left-1/4 animate-pulse"></div>
-    <div class="absolute w-72 h-16 bg-emerald-500/5 blur-3xl rounded-full bottom-4 right-1/4 animate-pulse" style="animation-delay: 2s;"></div>
-    <svg class="w-full h-20 px-4 opacity-85" viewBox="0 0 800 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M 0 50 Q 50 15, 100 50 T 200 50 T 300 50 T 400 50 T 500 50 T 600 50 T 700 50 T 800 50" 
-            stroke="url(#site-cyan-emerald)" stroke-width="2.5" stroke-dasharray="6 4" />          
-      <path d="M 0 50 Q 50 85, 100 50 T 200 50 T 300 50 T 400 50 T 500 50 T 600 50 T 700 50 T 800 50" 
-            stroke="url(#site-purple-blue)" stroke-width="2" />
-      <line x1="50" y1="23" x2="50" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="150" y1="23" x2="150" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="250" y1="23" x2="250" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="350" y1="23" x2="350" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="450" y1="23" x2="450" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="550" y1="23" x2="550" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="650" y1="23" x2="650" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <line x1="750" y1="23" x2="750" y2="77" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
-      <circle cx="100" cy="50" r="4.5" fill="#06b6d4" class="animate-ping" style="transform-origin: 100px 50px; animation-duration: 3s;" />
-      <circle cx="100" cy="50" r="3.5" fill="#06b6d4" />
-      <circle cx="300" cy="50" r="3.5" fill="#10b981" />
-      <circle cx="500" cy="50" r="4.5" fill="#a855f7" class="animate-ping" style="transform-origin: 500px 50px; animation-duration: 4s;" />
-      <circle cx="500" cy="50" r="3.5" fill="#a855f7" />
-      <circle cx="700" cy="50" r="3.5" fill="#3b82f6" />
-      <defs>
-        <linearGradient id="site-cyan-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#06b6d4" />
-          <stop offset="50%" stop-color="#22d3ee" />
-          <stop offset="100%" stop-color="#10b981" />
-        </linearGradient>
-        <linearGradient id="site-purple-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#a855f7" />
-          <stop offset="60%" stop-color="#6366f1" />
-          <stop offset="100%" stop-color="#3b82f6" />
-        </linearGradient>
-      </defs>
-    </svg>    
-    <div class="absolute bottom-2 right-4 font-mono text-[9px] text-slate-600 tracking-widest uppercase">
-      Process_DNA // Core_Architecture_Loaded
-    </div>
-  </div>
-</div>
 
 <main class="py-12 px-6 max-w-6xl mx-auto space-y-12">
 

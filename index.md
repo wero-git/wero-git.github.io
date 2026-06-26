@@ -172,6 +172,7 @@ title: Process Management Portfolio
     </div>
     <form class="glass-card p-6 rounded-xl space-y-4" data-aos="fade-left">
       <div>
+        <p>(soon available)</p>
         <label class="block text-xs uppercase text-slate-400 mb-1">Your Name</label>
         <input type="text" class="w-full bg-slate-900 border border-white/10 rounded p-2 text-sm focus:border-cyan-500 outline-none text-white">
       </div>
